@@ -1,0 +1,61 @@
+body{
+    font-family: sans-serif;
+    font-size:110%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #profilePhoto{
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin: 1rem;
+  }
+  
+  header{
+    text-align: center;
+    background-color: cornflowerblue;
+    font-size: 20px;
+    justify-content: center;
+  }
+  
+  .main{
+    display: flex;
+    flex-direction: row;
+    overflow: unset;
+  }
+  
+  .content{
+    padding: 1rem;
+  }
+  
+  .nav-menu{
+    list-style-type: none;
+    padding: 0%;
+  }
+  
+  #sidebar{
+    width: 20%;
+    background-color: cornflowerblue;
+    padding: 1rem;
+    color: black;
+  }
+  
+  h2 {
+    border-radius: 0px 5px 5px 0px;    
+    background-color: cornflowerblue;
+  }
+  
+  footer{
+    background-color: cornflowerblue;
+    text-align: center;
+  }
+  
+  .icons{
+    width: 3rem;
+    margin: 2rem;
+    height: auto;
+  }
+  
