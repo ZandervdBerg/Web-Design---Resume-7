@@ -1,61 +1,104 @@
-body{
-    font-family: sans-serif;
-    font-size:110%;
+body {
+  font-family: sans-serif;
+  font-size: 110%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes profilePhoto {
+ 0% {transform: rotate(0deg);}
+ 15% {transform: rotate(5deg);}
+ 30% {transform: rotate(10deg);}
+ 45% {transform: rotate(5deg);}
+ 60% {transform: rotate(-5deg);}
+ 75% {transform: rotate(0deg);}
+ 90% {transform: rotate(5deg);}
+ 100% {transform: rotate(10deg);}
+}
+
+#profilePhoto {
+  width: Auto;
+  height: 15rem;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin: 0rem;
+  animation-name: profilePhoto;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+ animation-direction: alternate;
+}
+
+header {
+  text-align: center;
+  background-color: cornflowerblue;
+  font-size: 20px;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  overflow: unset;
+}
+
+.content {
+  padding: 1rem;
+  background-image: url(/images/AutoCAD-professional.jpeg);
+  background-size: cover;
+}
+
+.nav-menu {
+  list-style-type: none;
+  padding: 0%;
+}
+
+#sidebar {
+  width: 20%;
+  background-color: cornflowerblue;
+  padding: 1rem;
+  color: black;
+}
+
+h2 {
+  border-radius: 0px 5px 5px 0px;
+  background-color: cornflowerblue;
+}
+
+footer {
+  background-color: cornflowerblue;
+  text-align: center;
+}
+
+@keyframes animatedSquare {
+  0% {
+    border-radius: 0%;
+    background-color: lightskyblue;
+  }
+  25% {
+    border-radius: 100%;
+    transform: rotate(90deg);
     background-color: white;
-    display: flex;
-    flex-direction: column;
   }
-  
-  #profilePhoto{
-    width: 20%;
-    height: 20%;
-    border-radius: 50%;
-    border: 3px solid white;
-    margin: 1rem;
+  50% {
+    background-color: lightblue;
+    transform: rotate(180deg);
+    transform: translatey(35px);
   }
-  
-  header{
-    text-align: center;
-    background-color: cornflowerblue;
-    font-size: 20px;
-    justify-content: center;
+  100% {
+    background-color: white;
+    transform: rotate(360deg);
   }
-  
-  .main{
-    display: flex;
-    flex-direction: row;
-    overflow: unset;
-  }
-  
-  .content{
-    padding: 1rem;
-  }
-  
-  .nav-menu{
-    list-style-type: none;
-    padding: 0%;
-  }
-  
-  #sidebar{
-    width: 20%;
-    background-color: cornflowerblue;
-    padding: 1rem;
-    color: black;
-  }
-  
-  h2 {
-    border-radius: 0px 5px 5px 0px;    
-    background-color: cornflowerblue;
-  }
-  
-  footer{
-    background-color: cornflowerblue;
-    text-align: center;
-  }
-  
-  .icons{
-    width: 3rem;
-    margin: 2rem;
-    height: auto;
-  }
-  
+}
+
+.icons {
+  width: 3rem;
+  margin: 2rem;
+  height: auto;
+  border-radius: 10px;
+  background-color: white;
+  animation-name: animatedSquare;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
